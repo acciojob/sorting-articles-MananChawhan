@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
   'The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil',
   'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State',
@@ -16,5 +15,5 @@ const sortedBands = bands.sort((a, b) => {
   return nameA.localeCompare(nameB);
 });
 
-const ul = document.getElementById('band');
+const ul = document.getElementById('bands'); // ✅ Updated ID here
 ul.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
